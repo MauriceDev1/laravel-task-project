@@ -1,5 +1,4 @@
 @extends('layouts.default')
 @section('content')
-   @include('includes.hero')
-   @include('includes.search')
+   @livewire('user-task')
 @stop

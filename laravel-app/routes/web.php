@@ -14,8 +14,14 @@ use App\Http\Controllers\TaskController;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', [TaskController::class, 'home'])->name('home');
 
 Route::get('/view_tasks', [TaskController::class, 'view'])->name('view');
+
+Route::get('/create', [TaskController::class, 'create'])->name('create');
+
+Route::post('/create', [TaskController::class, 'store'])->name('task.store');
+
+Route::get('/edit_task/{id}', [TaskController::class, 'edit' ])->name('edit');
+
+Route::put('/task/{task}/update', [TaskController::class, 'update'])->name('task.update');
