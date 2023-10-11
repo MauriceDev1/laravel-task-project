@@ -41,8 +41,7 @@
                     rows="8"
                     placeholder="Enter a description"
                     class="w-full border border-gray-300 p-2 resize-none"
-                >
-                </textarea>
+                ></textarea>
                 <button
                     class="bg-blue-500 hover:bg-blue-600 duration-300 mt-3 rounded h-10 text-lg text-white"
                 >
