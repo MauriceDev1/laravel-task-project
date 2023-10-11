@@ -52,6 +52,12 @@ make setup
 make data
 ```
 
+## Adding additional packages to Laravel Project
+
+```bash
+docker exec -it laravel-task-project bash
+```
+
 #### Step:5 run the following make comands
 
 - view project: http://localhost:9000/
