@@ -47,11 +47,13 @@ class UserTask extends Component
     public function render()
     {
         $tasks = Task::query();
-        $user = User::query();
 
-        if($this->userName){
-            $user->where('name', 'like', "%$this->userName%");
-            dd($user);
+        $username = $this->userName;
+
+        if($username){
+            $tasks->whereHas('user', function ($query) use ($username) {
+                $query->where('name', 'like', '%' . $username . '%');
+            });
         }
         
         if($this->taskName){
