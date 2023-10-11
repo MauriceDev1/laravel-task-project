@@ -10,15 +10,25 @@ This is a task tracker app, where user can create task and view the tasks on the
 
 ## Screen shots
 
-### home screen
+## Why The Tech stack
 
-![](images/home2.png)
+My choice of using Laravel beyond just the fact that this is what the organization uses but because of the mvc approach.  The fact that there is so much control as well as backed in functionality.
 
-### create screen
+PhP is what Laravel uses, despite the fact that I enjoy JS there are traights of php that are very strong and the fact that it is such an old language and is used by many websites till today. 
+
+### Entity-Relationship Diagram
+
+![](images/erd.png)
+
+### Home screen
+
+![](images/home.png)
+
+### Create screen
 
 ![](images/create.png)
 
-### edit screen
+### Edit screen
 
 ![](images/edit.png)
 
