@@ -32,9 +32,7 @@
                     rows="8"
                     placeholder="Enter a description"
                     class="w-full border border-gray-300 p-2 resize-none"
-                >
-                    {{trim($task->description)}}
-                </textarea>
+                >{{trim($task->description)}}</textarea>
                 <input type="submit" value="Update Task" class="bg-blue-500 hover:bg-blue-600 duration-300 mt-3 rounded h-10 text-lg text-white">
             </form>
         </div>
