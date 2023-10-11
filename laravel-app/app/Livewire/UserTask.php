@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Task;
+use App\Models\User;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -10,9 +11,13 @@ class UserTask extends Component
 {
     use WithPagination;
 
-    public $userId;
+    public $userName;
 
     public $taskName;
+
+    public $taskComplete;
+
+    public $taskDate;
 
     public function delete(Task $taskId){
         $taskId->delete();
@@ -32,17 +37,39 @@ class UserTask extends Component
             $record->save();
         }
     }
-
-    public function handleSearch() {
-        dd($this->userId . ' ' . $this->taskName );
+ 
+    public function search()
+    {
+        $this->resetPage();
     }
+ 
 
     public function render()
     {
-        $tasks = Task::paginate(5);
+        $tasks = Task::query();
+        $user = User::query();
+
+        if($this->userName){
+            $user->where('name', 'like', "%$this->userName%");
+            dd($user);
+        }
+        
+        if($this->taskName){
+            $tasks->where('title', 'like', "%$this->taskName%");
+        }
+
+        if($this->taskComplete){
+            $tasks->where('completed',$this->taskComplete);
+        }
+
+        if($this->taskDate){
+            $tasks->whereDate('created_at',$this->taskDate);
+        }
+
+        $result = $tasks->paginate(5);        
 
         return view('livewire.user-task',[
-            'tasks' => $tasks
+            'tasks' => $result
         ]);
     }
 }
