@@ -12,11 +12,11 @@ This is a task tracker app, where user can create task and view the tasks on the
 
 ### home screen
 
-![](images/create.png)
+![](images/home2.png)
 
 ### create screen
 
-![](images/home.png)
+![](images/create.png)
 
 ### edit screen
 

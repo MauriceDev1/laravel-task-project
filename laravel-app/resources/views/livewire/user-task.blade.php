@@ -29,7 +29,7 @@
                 @foreach($tasks as $task)
                     <div class="w-full flex h-16 bg-gray-100 border border-gray-300 items-center">
                         <div class="w-1/12 px-4">
-                            <input wire:click="changeStatus({{$task->id}})" type="checkbox"  {{ old($task->completed) ? 'checked' : '' }}/>
+                            <input wire:click="changeStatus({{$task->id}})" type="checkbox"  {{ $task->completed == 1 ? 'checked' : '' }}/>
                         </div>
                         <div class="w-1/12 px-4">
                             {{ $task->id }}
