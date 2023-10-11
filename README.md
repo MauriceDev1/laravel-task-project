@@ -8,6 +8,12 @@ This is a task tracker app, where user can create task and view the tasks on the
 
 **Server:** MySQL, Docker
 
+## Screen shots
+
+### home screen
+
+![](images/home.png)
+
 
 ## Installation
 
@@ -37,6 +43,11 @@ git clone https://github.com/MauriceDev1/laravel-task-project.git
 make setup
 make data
 ```
+
+#### Step:5 run the following make comands
+
+- project project:http://localhost:9000/
+- phpmyadmin project:http://localhost:9001/
 
 ## Authors
 
