@@ -10,7 +10,7 @@ This is a task tracker app, where user can create task and view the tasks on the
 
 ## Screen shots
 
-## Why The Tech stack
+## Why The Tech stack?
 
 My choice of using Laravel beyond just the fact that this is what the organization uses but because of the mvc approach.  The fact that there is so much control as well as backed in functionality.
 
