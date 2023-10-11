@@ -54,8 +54,8 @@ make data
 
 #### Step:5 run the following make comands
 
-- project project:http://localhost:9000/
-- phpmyadmin project:http://localhost:9001/
+- view project: http://localhost:9000/
+- phpmyadmin project: http://localhost:9001/
 
 ## Authors
 
