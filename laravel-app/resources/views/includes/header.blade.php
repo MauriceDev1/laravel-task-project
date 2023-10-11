@@ -3,6 +3,9 @@
         <a id="logo" href="/">
             <img src="{{URL('storage/images/logo.png')}}" class="h-10">
         </a>
+        <div>
+            @livewire('weather')
+        </div>
         <div class="flex gap-4">
             <a href="/create">
                 <button class="bg-sky-500 hover:bg-sky-600 h-10 px-5 rounded text-white">
